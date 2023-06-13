@@ -1,0 +1,169 @@
+* {
+    font-family: "Roboto", sans-serif
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+
+}
+
+.stopwatch {
+    background-color: #000000;
+    position: relative;
+    height: 100%
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+.stopwatch::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    display: block;
+    background-image: url(https://www.gstatic.com/earth/social/00_generic_facebook-001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -80px;
+  
+    
+}
+
+.stopwatch__inner {
+    height: 65%;
+    padding: 40px 0;
+    box-sizing: border-box;
+    
+    position: relative
+}
+
+.stopwatch__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.stopwatch__controls {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px
+}
+
+.stopwatch__controls button {
+    margin: 0 10px
+}
+
+.stopwatch__button {
+    width: 7rem;
+    height: 3rem;
+   border: 3px solid white;
+   border-radius: 2rem;
+   background: transparent;
+   color: white;
+   font-weight: 600;
+   font-size: medium;
+}
+
+.stopwatch__records {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+    height: 40%;
+    overflow-y: auto
+}
+
+.counter {
+    font-size: 80px;
+    color: #fff
+}
+
+.counter-colon:after {
+    content: ":"
+}
+
+.counter-dot:after {
+    content: "."
+}
+
+.counter-ms {
+    color: #666
+}
+
+.record {
+    display: flex;
+    color: #fff;
+    margin-top: 5px
+}
+
+.record__index {
+    margin-right: 35px;
+    width: 20px;
+    text-align: right
+}
+
+
+
+@media(max-width: 767px) {
+    .stopwatch:before {
+        background-position: 0 -40px
+    }
+
+    .counter {
+        font-size: 64px
+    }
+}
+
+@media(max-width: 575px) {
+    .counter {
+        font-size: 60px
+    }
+}
+
+@media(max-width: 480px) {
+    .stopwatch:before {
+        background-position: center bottom 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+  /* this is for scrollbar in record section */
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 5px
+}

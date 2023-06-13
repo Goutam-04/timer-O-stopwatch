@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="../../public/css/stopwatch.css" />
+   </head>
+   <body>
+      <div class="stopwatch">
+         <div class="stopwatch__inner">
+          
+            <h1>STOPWATCH</h1>
+            <div class="stopwatch__main">
+               <div class="counter counter-h counter-colon">00</div>
+               <div class="counter counter-m counter-colon">00</div>
+               <div class="counter counter-s counter-dot">00</div>
+               <div class="counter counter-ms">00</div>
+            </div>
+            <div class="stopwatch__controls">
+               <button class="stopwatch__button" id="startTimerButton">START</button>
+               <button class="stopwatch__button" id="stopTimerButton">STOP</button>
+               <button class="stopwatch__button" id="resetTimerButton">RESTART</button>
+               <button class="stopwatch__button" id="recordTimerButton">RECORD</button>
+               <!-- <button class="stopwatch__button"></button> -->
+            </div>
+            <div class="stopwatch__records">
+               <!-- here i am going to put the value of time when the lap button is pressed -->
+             </div>
+         </div>
+      </div>
+
+      <script src="../../public/js/stopwatch.js"></script>
+   </body>
+</html>
