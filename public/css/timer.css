@@ -224,6 +224,9 @@ input::-webkit-inner-spin-button {
     .timer__main{
         width: 80vw;
     }
+    .timer__controls{
+        width:100%;
+    }
 }
 
 .home{
