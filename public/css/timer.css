@@ -227,9 +227,7 @@ input::-webkit-inner-spin-button {
     .timer__controls{
         width:100%;
     }
-    .clock::after{
-        background-size: 80%;
-    }
+    
 }
 
 .home{
