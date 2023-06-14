@@ -167,3 +167,28 @@ h1{
     background: #555;
     border-radius: 5px
 }
+
+
+
+
+/* HAM */
+
+
+
+.home{
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    z-index: 30;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 1rem;
+    display: inline-block;
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+    padding-top: 0.3rem;
+    font-weight: 500;
+
+}

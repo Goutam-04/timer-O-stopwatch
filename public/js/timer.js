@@ -44,7 +44,7 @@ reset.addEventListener('click', function(){
     minute.disabled = false;
     second.disabled = false;
 
-    
+   
 });
 
 function timer(){

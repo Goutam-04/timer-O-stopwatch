@@ -1,24 +1,19 @@
 // HAMBURGER MENU***********************************************************************************************************
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelector(".nav-link");
 
+hamburger.addEventListener("click",mobileMenu);
+navLink.foreach(n => n.addEventListener("click", closeMenu));
 
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
-
-function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
-  } else {
-    menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
-  }
+function mobileMenu(){
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
 
-hamburger.addEventListener("click", toggleMenu);
+function closeMenu(){
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active"); 
+}
 
 // TIMER ------------------------------------------------------------------------------------------------------------------------
