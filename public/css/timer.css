@@ -215,11 +215,11 @@ input::-webkit-inner-spin-button {
     }
     input{
         width: 3rem;
-        height: 1.3rem;
+        height: 1.1rem;
         
     }
     .counter {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
     .timer__main{
         width: 80vw;
